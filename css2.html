@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 CSS Modified</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Horizontal Navbar */
+        .navbar-horizontal {
+            width: 500px; /* Adjusted width */
+            margin-left: 350px; /* Adjusted margin-left */
+            overflow-x: auto;
+            margin-right: 80px; /* Adjusted margin-right */
+            margin-top: 100px; /* Adjusted margin-top */
+            display: flex;
+            border: 2px solid #000;
+            padding: 10px; /* Adjusted padding */
+        }
+
+        .navbar-horizontal a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: green; /* Changed link color to green */
+            display: block;
+            border-right: 2px solid #000;
+            background-color: rgb(201, 201, 201);
+        }
+
+        .navbar-horizontal a:last-child {
+            border-right: none;
+        }
+
+        .navbar-horizontal a.active {
+            background-color: rgb(67, 67, 67);
+            color: white;
+        }
+
+        .navbar-horizontal a:hover,
+        .navbar-horizontal a:focus {
+            background-color: rgb(67, 67, 67);
+            color: white;
+        }
+
+        /* Vertical Navbar */
+        .navbar-vertical {
+            width: 200px; /* Adjusted width */
+            overflow-y: auto;
+            border: 2px solid #000;
+            padding: 10px; /* Adjusted padding */
+            margin-left: 40px; /* Adjusted margin-left */
+        }
+
+        .navbar-vertical a {
+            background-color: rgb(255, 165, 0); /* Changed link background color to orange */
+            padding: 10px 20px;
+            text-decoration: none;
+            color: blue;
+            display: block;
+        }
+
+        .navbar-vertical a.active {
+            background-color: rgb(163, 163, 38);
+            color: white;
+        }
+
+        .navbar-vertical a:hover,
+        .navbar-vertical a:focus {
+            background-color: rgb(163, 163, 38);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-horizontal">
+        <a href="#" class="active">Home</a>
+        <a href="#">JavaScript</a>
+        <a href="#">CSS3</a>
+        <a href="#">HTML5</a>
+        <a href="#">React</a>
+    </div>
+
+    <div class="navbar-vertical">
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Profile</a>
+        <a href="#">Settings</a>
+        <a href="#">Help</a>
+        <a href="#">Logout</a>
+    </div>
+</body>
+</html>

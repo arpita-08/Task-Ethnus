@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Information</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: large;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 70%; /* Adjusted table width */
+            border-collapse: collapse;
+            border-radius: 8px; /* Slightly reduced border radius */
+            overflow: hidden;
+            border: 2px solid black; /* Increased border thickness */
+        }
+
+        th, td {
+            border-radius: 6px; /* Slightly reduced border radius */
+            border: 1px solid black; 
+        }
+
+        th {
+            background-color: lightgray; /* Changed the background color */
+        }
+
+        td {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Data</h1>
+    <table>
+        <colgroup>
+            <col span="3" style="background-color: lightblue">
+        </colgroup>
+        <caption>Employee Details</caption>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td style="width: 100px;">Alice</td>
+            <td style="width: 150px;">Johnson</td>
+            <td style="width: 100px;">30</td>
+        </tr>
+        <tr>
+            <td style="width: 100px;">Bob</td>
+            <td style="width: 150px;">Williams</td>
+            <td style="width: 100px;">45</td>
+        </tr>
+        <tr>
+            <td style="width: 100px;">Carol</td>
+            <td style="width: 150px;">Smith</td>
+            <td style="width: 100px;">28</td>
+        </tr>
+    </table>
+</body>
+</html>
